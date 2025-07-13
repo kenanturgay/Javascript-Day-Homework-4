@@ -78,8 +78,6 @@ form {
 }
 
 .tasks-list {
-  background-color: #75ef53;
-  padding: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -87,7 +85,7 @@ form {
 }
 
 .task-item {
-  background-color: #fff;
+  background-color: #7ceaf6;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #000;
@@ -115,4 +113,13 @@ button {
 button:hover {
   background-color: #1da5fa;
   color: white;
+}
+
+.task-detail-area textarea {
+  resize: vertical;
+  width: 100%;
+  height: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-sizing: border-box;
 }
