@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Yapılacaklar Listesi</h1>
+      <form>
+        <div class="task-add">
+          <div class="task-title">
+            <input type="text" placeholder="Görev Başlığı" class="title" />
+          </div>
+          <div class="task-details">
+            <div class="task-detail-area">
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Görev Açıklaması"
+              ></textarea>
+            </div>
+            <div class="task-details-options">
+              <div class="priority">
+                <h4>Öncelik</h4>
+                <label
+                  ><input type="radio" name="priority" value="Düşük" />
+                  Düşük</label
+                >
+                <label
+                  ><input type="radio" name="priority" value="Orta" />
+                  Orta</label
+                >
+                <label
+                  ><input type="radio" name="priority" value="Yüksek" />
+                  Yüksek</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="dead-time">
+            <div class="date">
+              <label for="start">Bitiş Tarihi:</label>
+              <input
+                class="date-input"
+                type="date"
+                id="start"
+                name="trip-start"
+                min="2025-01-01"
+                max="2025-12-31"
+              />
+            </div>
+            <div class="add">
+              <button type="submit">Görev Ekle</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="tasks-list">
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
